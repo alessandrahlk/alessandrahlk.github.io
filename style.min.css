@@ -441,7 +441,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 @media only screen and (max-width: 48em) {
   .header .btn-principal {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 }
 .header h4 {

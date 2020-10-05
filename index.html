@@ -321,19 +321,33 @@ Alguns detalhes sobre o funcionamento esperado:
     </footer>
 
     <a title="Voltar ao topo da página" href="#site-header">
-        <div class="btn-voltartopo icones-links">
+        <div id="btn-voltartopo" class="icones-links">
             <img src="assets/images/icon-voltar.jpg">
         </div>
     </a>
 
     <script>
+        var btnvoltar = document.getElementById("btn-voltartopo");
+        
+        // Quando rolar 20px do topo, mostrar botao
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnvoltar.style.opacity = "1";
+          } else {
+            btnvoltar.style.opacity = "0";
+          }
+        }
 
+        //fixa o menu ao abrir no mobile
         $("#overlay").on("click", "li", function () { $("#overlay-input").click(); });
         $("#overlay-input").on("click", function () {
             $("body").toggleClass("fixedmenu");
         });
-    </script>
+        </script>
+
     <script>
+        //Configuração dos slides
         jQuery(document).ready(function () {
             jQuery('.carousel-entenda').owlCarousel({
                 nav: false,

@@ -66,11 +66,11 @@ button{
     } 
 }
 
-.btn-voltartopo{
+#btn-voltartopo{
     position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 2rem;
+    bottom: 0rem;
+    right: 0rem;
+    margin: 4rem;
     background:#000;
     line-height: 0;
     border-radius: 50%;
@@ -82,4 +82,5 @@ button{
     color: #fff;
     z-index: 100;
     cursor: pointer;
+    @include transition(0.3s);
 }

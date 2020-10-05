@@ -326,8 +326,7 @@
 
     <script>
         var btnvoltar = document.getElementById("btn-voltartopo");
-
-        // Quando rolar 20px do topo, mostrar botao
+        // Quando rolar 20px do topo -> mostrar botao
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -336,16 +335,13 @@
                 btnvoltar.style.opacity = "0";
             }
         }
-
-        //fixa o menu ao abrir no mobile
-        /* $("#overlay").on("click", "li", function () { $("#overlay-input").click(); });
-         $("#overlay-input").on("click", function () {
-             $("body").toggleClass("fixedmenu");
-         });*/
+        //Fecha menu mobile se clicar em um dos itens
+        $("#overlay").on("click", "li", function () { $("#overlay-input").click(); });
+   
     </script>
 
     <script>
-        //Configuração dos slides
+        //Configuracao dos slides
         jQuery(document).ready(function () {
             jQuery('.carousel-entenda').owlCarousel({
                 nav: false,

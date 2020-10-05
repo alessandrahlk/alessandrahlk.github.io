@@ -32,7 +32,7 @@ Alguns detalhes sobre o funcionamento esperado:
     Vídeo do bloco 3 abre no mesmo lugar, sem pop-up;
     No bloco de empresas, já deixar ativo um slide, caso tenham mais marcas;
     Flecha no rodapé deve rolar a tela até o topo suavemente.
---> 
+-->
     <header id="site-header" class="header">
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="header-video">
             <source src="assets/videos/particles.mp4" type="video/mp4">
@@ -294,7 +294,8 @@ Alguns detalhes sobre o funcionamento esperado:
             </div>
             <div class="row footer-botoes wow zoomIn">
                 <div class="col-lg-6 footer-col-faleconsultor">
-                    <a href=""><button id="btn-fale-consultor" class="btn-principal-footer">Fale com um consultor</button></a>
+                    <a href=""><button id="btn-fale-consultor" class="btn-principal-footer">Fale com um
+                            consultor</button></a>
                 </div>
                 <div class="col-lg-6 footer-col-whatsapp">
                     <a href=""><button id="btn-whatsapp" class="btn-whatsapp">Nosso Whatsapp</button></a>
@@ -325,6 +326,14 @@ Alguns detalhes sobre o funcionamento esperado:
             <img src="assets/images/icon-voltar.jpg">
         </div>
     </a>
+
+    <script>
+
+        $("#overlay").on("click", "li", function () { $("#overlay-input").click(); });
+        $("#overlay-input").on("click", function () {
+            $("body").toggleClass("fixedmenu");
+        });
+    </script>
     <script>
         jQuery(document).ready(function () {
             jQuery('.carousel-entenda').owlCarousel({
@@ -354,7 +363,7 @@ Alguns detalhes sobre o funcionamento esperado:
                 loop: true,
                 autoplayHoverPause: true, // Stops autoplay
                 autoplay: true,
-                autoplayTimeout: 5000,
+                autoplayTimeout: 4000,
                 dots: true,
                 responsiveClass: true,
                 responsive: {

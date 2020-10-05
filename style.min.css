@@ -270,7 +270,7 @@ nav {
   top: 2.5em;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 26px 15px;
+  padding: 2.6rem 1.5rem;
   z-index: 2;
   user-select: none;
   background: #f86401;
@@ -321,6 +321,7 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked ~ #overlay {
   visibility: visible;
+  opacity: 1;
 }
 
 input[type=checkbox]:checked ~ #overlay-button:hover span,
@@ -343,7 +344,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   -ms-flex-pack: end;
   justify-content: flex-end;
   list-style: none;
-  font-size: 1.6rem;
   text-transform: uppercase;
 }
 #overlay li {
@@ -354,10 +354,12 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #ec6451;
+    background: #FFF;
     z-index: 1;
     position: absolute;
     visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
   }
   #overlay.active {
     visibility: visible;
@@ -373,16 +375,21 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     list-style-type: none;
   }
   #overlay ul li {
-    padding: 1em;
+    padding: 1.5em;
   }
   #overlay ul li a {
-    color: white;
+    color: #1c0072;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-weight: 700;
   }
   #overlay ul li a:hover {
     color: #333332;
   }
+}
+
+.fixedposition {
+  position: fixed !important;
 }
 
 *,
@@ -407,6 +414,11 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
 }
+
+.fixedmenu {
+  overflow-y: hidden;
+}
+
 .header {
   background: url("assets/images/bk-top.jpg");
   background-size: cover;

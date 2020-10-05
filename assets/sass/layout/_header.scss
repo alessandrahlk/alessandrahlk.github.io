@@ -1,12 +1,11 @@
 .header {
-    background-color         :#000;
+    background       :#000;
     background-size    : cover;
-    background-position: center;
     height             : 60rem;
     padding            : 3rem;
-    color              : #FFF;
+    color              : #FFF; 
     overflow           : hidden;
-    position           : relative;
+    position           : relative; 
 
     &-video {
         position  : absolute;
@@ -33,7 +32,8 @@
         padding: 0;
         height : 44rem;
         overflow : visible;
-        background: url('assets/images/bk-top.jpg') black no-repeat cover center center;
+        background: url("assets/images/bk-top.jpg") no-repeat;
+        background-size:cover;
     }
 
     &-chamada-interna {

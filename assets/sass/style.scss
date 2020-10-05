@@ -2,13 +2,12 @@
 @import "abstract/colors";
 @import "abstract/typography";
 
-@import "components/typography";
+@import "components/body"; 
 @import "components/headings";
 @import "components/buttons";
 @import "components/links";
 @import "components/media";
 @import "components/navigation";
-@import "components/body"; 
 
 @import "layout/header";
 @import "layout/main";

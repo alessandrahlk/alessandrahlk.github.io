@@ -7,6 +7,14 @@
     overflow           : hidden;
     position           : relative; 
 
+    @include respond(tab-small) {
+        padding: 0;
+        height : 44rem;
+        overflow : visible;
+        background: url("assets/images/bk-top.jpg") no-repeat;
+        background-size:cover;
+    }
+
     &-video {
         position  : absolute;
         top       : 50%;
@@ -28,13 +36,6 @@
         height  : 100%;
     }
 
-    @include respond(tab-small) {
-        padding: 0;
-        height : 44rem;
-        overflow : visible;
-        background: url("assets/images/bk-top.jpg") no-repeat;
-        background-size:cover;
-    }
 
     &-chamada-interna {
         display: inline-block; 
@@ -80,4 +81,17 @@
     @include respond(tab-small) {
         display: none;
     }
+}
+
+
+
+.centraliza-chamada {
+    text-align     : center;
+    height         : 100%;
+    width          : 100%;
+    align-items    : center;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: center; 
 }

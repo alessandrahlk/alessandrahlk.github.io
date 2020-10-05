@@ -22,18 +22,12 @@
 
 <body>
     <script>
+        //inicializa animacoes
         new WOW().init();
     </script>
-    <!--
-Alguns detalhes sobre o funcionamento esperado: 
-    Fundo do banner terá um animação (vídeo);
-    Menus ao serem clicados deverão focar em cada respectivo bloco, fazer uma rolagem suave;
-    Animar a entrada dos títulos e textos dos blocos conforme rolagem;
-    Vídeo do bloco 3 abre no mesmo lugar, sem pop-up;
-    No bloco de empresas, já deixar ativo um slide, caso tenham mais marcas;
-    Flecha no rodapé deve rolar a tela até o topo suavemente.
--->
+
     <header id="site-header" class="header">
+
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="header-video">
             <source src="assets/videos/particles.mp4" type="video/mp4">
         </video>
@@ -50,8 +44,7 @@ Alguns detalhes sobre o funcionamento esperado:
                         <li><a href="#comofunciona">Como funciona</a></li>
                         <li><a href="#vantagens">Vantagens</a></li>
                         <li><a href="#contato">Contato</a></li>
-                        <button id="btn-quero-saber-mais-mobile" class="btn-principal elemento-mobile">Quero saber
-                            mais!</button>
+                        <a href="#"><button id="btn-quero-saber-mais-mobile" class="btn-principal elemento-mobile">Quero saber mais!</button></a>
                     </ul>
                 </div>
             </nav>
@@ -63,24 +56,27 @@ Alguns detalhes sobre o funcionamento esperado:
                     </a>
                     <h1>
                         Um Marketplace completo
-                        para indústrias e distribuidoras
+                        para indústrias e distribuidoras<br/>
+                        <span class="subtitulo-header">Conecte os seus produtos direto com o consumidor final</span>
+                       
                     </h1>
-                    <h4>
-                        Conecte os seus produtos direto com o consumidor final
-                    </h4>
-                    <button id="btn-quero-saber-mais" class="btn-principal">Quero Saber mais!</button>
+
+                    <a href="#"><button id="btn-quero-saber-mais" class="btn-principal">Quero Saber mais!</button></a>
                 </div>
             </div>
         </div>
+
     </header>
+
     <main>
+
         <section id="ccmarket">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 col-novo-jeito">
                         <div class="wow fadeInLeft">
                             <h2 class="">CC Market<br />
-                                <span class="titulo-novo-jeito">O seu novo jeito de vender</span></h2>
+                                <span class="subtitulo">O seu novo jeito de vender</span></h2>
                             <p class="novo-jeito ">
                                 Um marketplace com solução logística completa para que <span class="texto-destaque">os
                                     seus
@@ -98,26 +94,25 @@ Alguns detalhes sobre o funcionamento esperado:
                 </div>
             </div>
         </section>
-        <section id="comofunciona">
 
+        <section id="comofunciona">
             <div class="video-explicativo">
                 <div class="video">
 
-                    <iframe src="https://www.youtube.com/embed/Mt8GIaDyV-M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                    <iframe src="https://www.youtube.com/embed/Mt8GIaDyV-M" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-
             </div>
 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-digital-descomplicado wow zoomIn">
                         <h2>Digital e descomplicado<br />
-                            <span class="titulo-novo-jeito">Entenda como o CC Market vai vender os seus produtos</span>
+                            <span class="subtitulo">Entenda como o CC Market vai vender os seus produtos</span>
                         </h2>
                     </div>
                 </div>
-
                 <div class="row wow fadeInUp">
                     <div class="owl-carousel owl-theme carousel-entenda">
                         <div class="col-entenda-vender">
@@ -169,13 +164,14 @@ Alguns detalhes sobre o funcionamento esperado:
                 </div>
             </div>
         </section>
+
         <section id="conhecahabitos" class="conhecahabitos">
             <div class="centraliza-chamada">
                 <div class="conhecahabitos-chamada-interna wow zoomIn">
                     <h2>Conheça os hábitos de compra
                         do seu consumidor para lucrar mais!<br />
                     </h2>
-                    <span class="titulo-novo-jeito">Saiba exatamente quem, como e de onde estão comprando.
+                    <span class="subtitulo">Saiba exatamente quem, como e de onde estão comprando.
                         Tenha acesso ao mix total da compra.</span>
                 </div>
             </div>
@@ -185,11 +181,11 @@ Alguns detalhes sobre o funcionamento esperado:
             <div class="container">
                 <div class="row  wow fadeInUp">
                     <div class="col-lg-4 vantagens-col-logistica">
-                        <h2>Com logística e tecnologia, criamos uma solução que pode ser o seu novo novo jeito de
+                        <h2 class="titulo-vantagens">Com logística e tecnologia, criamos uma solução que pode ser o seu novo novo jeito de
                             vender.
                             <br />
                         </h2>
-                        <span class="titulo-novo-jeito">Uma alternativa B2C para empresas B2B!</span>
+                        <span class="subtitulo">Uma alternativa B2C para empresas B2B!</span>
 
                     </div>
 
@@ -234,7 +230,6 @@ Alguns detalhes sobre o funcionamento esperado:
                             pagamento.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -280,39 +275,42 @@ Alguns detalhes sobre o funcionamento esperado:
         </section>
 
     </main>
+
     <footer id="contato" class="footer">
+
         <div class="container">
             <div class="row text-center  wow zoomIn">
                 <div class="col-12 text-center">
                     <h2>Modernize o seu negócio
                     </h2>
-                    <span class="titulo-novo-jeito">Seja digital, alcance mais clientes e aumente sua receita
+                    <span class="subtitulo">Seja digital, alcance mais clientes e aumente sua receita
                         mensal.</span>
                 </div>
-
             </div>
+
             <div class="row footer-botoes wow zoomIn">
                 <div class="col-lg-6 footer-col-faleconsultor">
-                    <a href=""><button id="btn-fale-consultor" class="btn-principal-footer">Fale com um
+                    <a href="#"><button id="btn-fale-consultor" class="btn-principal-footer">Fale com um
                             consultor</button></a>
                 </div>
                 <div class="col-lg-6 footer-col-whatsapp">
-                    <a href=""><button id="btn-whatsapp" class="btn-whatsapp">Nosso Whatsapp</button></a>
+                    <a href="#"><button id="btn-whatsapp" class="btn-whatsapp">Nosso Whatsapp</button></a>
                 </div>
             </div>
 
             <div class="row wow fadeIn">
                 <div class="col-12 text-center footer-redessociais">
-                    <a href=""><img src="assets/images/icon-facebook.jpg" class="icones-links"></a>
-                    <a href=""> <img src="assets/images/icon-twitter.jpg" class="icones-links"> </a>
-                    <a href=""> <img src="assets/images/icon-instagram.jpg" class="icones-links"> </a>
-                    <a href=""> <img src="assets/images/icon-youtube.jpg" class="icones-links"> </a>
+                    <a href="#"><img src="assets/images/icon-facebook.jpg" class="icones-links"></a>
+                    <a href="#"> <img src="assets/images/icon-twitter.jpg" class="icones-links"> </a>
+                    <a href="#"> <img src="assets/images/icon-instagram.jpg" class="icones-links"> </a>
+                    <a href="#"> <img src="assets/images/icon-youtube.jpg" class="icones-links"> </a>
                 </div>
             </div>
 
             <div class="row wow fadeIn">
                 <div class="col-12 text-center">
-                    <a href=""><span class="footer-click-web">clickweb</span></a>
+                    <a href="https://www.clickweb.com.br/" target="_blank"><span
+                            class="footer-click-web">clickweb</span></a>
                 </div>
             </div>
         </div>
@@ -328,23 +326,23 @@ Alguns detalhes sobre o funcionamento esperado:
 
     <script>
         var btnvoltar = document.getElementById("btn-voltartopo");
-        
+
         // Quando rolar 20px do topo, mostrar botao
-        window.onscroll = function() {scrollFunction()};
+        window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            btnvoltar.style.opacity = "1";
-          } else {
-            btnvoltar.style.opacity = "0";
-          }
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnvoltar.style.opacity = "1";
+            } else {
+                btnvoltar.style.opacity = "0";
+            }
         }
 
         //fixa o menu ao abrir no mobile
-       /* $("#overlay").on("click", "li", function () { $("#overlay-input").click(); });
-        $("#overlay-input").on("click", function () {
-            $("body").toggleClass("fixedmenu");
-        });*/
-        </script>
+        /* $("#overlay").on("click", "li", function () { $("#overlay-input").click(); });
+         $("#overlay-input").on("click", function () {
+             $("body").toggleClass("fixedmenu");
+         });*/
+    </script>
 
     <script>
         //Configuração dos slides

@@ -1,3 +1,27 @@
+
+.subtitulo{
+    font-size:2.6rem;
+    color:$laranja-ccmarket;
+    font-weight: 700;
+    @include respond(tab-small) {
+        font-size:2.2rem;
+    }
+} 
+
+.novo-jeito{
+    font-size:2rem;
+    margin-top:4rem;
+    line-height: 3rem;
+    @include respond(tab-small) {
+        font-size:1.8rem;  
+        margin-top:2rem;
+    }
+}
+
+.texto-destaque{
+    color:$laranja-ccmarket;  
+}
+
 .col-background-celular {
     background     : url("assets/images/celular.jpg");
     background-size: cover;
@@ -75,15 +99,6 @@
         padding   : 5rem 0 0 0;
     }
 
-    h2 {
-        font-size    : 2.6rem;
-        margin-bottom: 4rem;
-
-        @include respond(tab-small) {
-            font-size: 2.2rem;
-        }
-    }
-
     p {
         margin-top: 1.5rem;
     }
@@ -92,9 +107,9 @@
         margin-bottom: 4rem;
     }
 
-    &-col-logistica{
+    &-col-logistica {
         @include respond(tab-small) {
-            padding-bottom:5rem;
+            padding-bottom: 5rem;
         }
     }
 
@@ -102,8 +117,8 @@
         padding-right: 7rem;
 
         @include respond(tab-small) {
-            padding: 5rem 1rem 3rem 1rem;
-             order:1;
+            padding: 5rem 3rem 2rem 3rem;
+            order  : 1;
         }
     }
 
@@ -112,8 +127,9 @@
         color           : #FFF;
         padding         : 4rem 3.5rem;
         text-align      : center;
+
         @include respond(tab-small) {
-            order:0;
+            order : 0;
             margin: 0 5rem;
         }
     }
@@ -127,17 +143,24 @@
     background-color: $laranja-escuro;
 }
 
-.owl-carousel {
+.carousel-empresas {
     padding-bottom: 8rem;
+}
+
+@include respond(tab-small) {
+    .carousel-entenda {
+        padding-bottom: 5rem;
+    } 
 }
 
 .carousel-empresas .owl-item {
     text-align: center;
     opacity   : 0.4;
     @include transition(.3s);
-    @include respond(tab-small) { 
-        opacity:1;
-    } 
+
+    @include respond(tab-small) {
+        opacity: 1;
+    }
 
     &:hover {
         opacity: 1;
@@ -149,5 +172,9 @@
 }
 
 .owl-dots {
-    margin-top: 1rem;
+    margin-top: 4rem;
+}
+
+.fixedmenu {
+    overflow-y: hidden;
 }

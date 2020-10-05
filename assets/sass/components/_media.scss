@@ -1,7 +1,8 @@
 .video {
     height: 52rem;
     width:90rem;
-    margin: 7rem auto 0 auto;
+    margin: auto;
+    padding: 7rem 0 0 0;
 
     iframe{
         width:100%;
@@ -11,7 +12,7 @@
     @include respond(tab-port) {
         width:auto;
         height    : 40rem;
-        margin:0;
+        padding:0;
     }
 }
 

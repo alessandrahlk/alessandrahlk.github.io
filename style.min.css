@@ -6,50 +6,27 @@
 1800px + :      Big desktop
 1em = 16px
 */
-.titulo-novo-jeito {
-  font-size: 2.6rem;
-  color: #f86401;
-  font-weight: 700;
-}
-@media only screen and (max-width: 48em) {
-  .titulo-novo-jeito {
-    font-size: 2.2rem;
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.novo-jeito {
-  font-size: 2rem;
-  margin-top: 4rem;
-  line-height: 3rem;
-}
-@media only screen and (max-width: 48em) {
-  .novo-jeito {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-  }
+* {
+  outline: none;
 }
 
-.texto-destaque {
-  color: #f86401;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-.centraliza-chamada {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 h1 {
@@ -59,6 +36,16 @@ h1 {
 @media only screen and (max-width: 48em) {
   h1 {
     font-size: 2.6rem;
+  }
+}
+
+.subtitulo-header {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 48em) {
+  .subtitulo-header {
+    font-size: 1.8rem;
   }
 }
 
@@ -78,6 +65,16 @@ h2.titulo-empresas {
   text-align: center;
 }
 
+h2.titulo-vantagens {
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 48em) {
+  h2.titulo-vantagens {
+    font-size: 2.2rem;
+  }
+}
+
 h3 {
   font-size: 2rem;
 }
@@ -85,16 +82,6 @@ h3 {
 h3.entenda-vender {
   font-size: 2.17rem;
   padding-bottom: 1.5rem;
-}
-
-h4 {
-  font-size: 2.2rem;
-  font-weight: 400;
-}
-@media only screen and (max-width: 48em) {
-  h4 {
-    font-size: 1.8rem;
-  }
 }
 
 button {
@@ -228,7 +215,8 @@ a:hover, a:active {
 .video {
   height: 52rem;
   width: 90rem;
-  margin: 7rem auto 0 auto;
+  margin: auto;
+  padding: 7rem 0 0 0;
 }
 .video iframe {
   width: 100%;
@@ -238,7 +226,7 @@ a:hover, a:active {
   .video {
     width: auto;
     height: 40rem;
-    margin: 0;
+    padding: 0;
   }
 }
 
@@ -396,33 +384,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   position: fixed !important;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-* {
-  outline: none;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.8rem;
-}
-
-.fixedmenu {
-  overflow-y: hidden;
-}
-
 .header {
   background: #000;
   background-size: cover;
@@ -431,6 +392,15 @@ body {
   color: #FFF;
   overflow: hidden;
   position: relative;
+}
+@media only screen and (max-width: 48em) {
+  .header {
+    padding: 0;
+    height: 44rem;
+    overflow: visible;
+    background: url("assets/images/bk-top.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 .header-video {
   position: absolute;
@@ -455,15 +425,6 @@ body {
   position: relative;
   z-index: 2;
   height: 100%;
-}
-@media only screen and (max-width: 48em) {
-  .header {
-    padding: 0;
-    height: 44rem;
-    overflow: visible;
-    background: url("assets/images/bk-top.jpg") no-repeat;
-    background-size: cover;
-  }
 }
 .header-chamada-interna {
   display: inline-block;
@@ -513,6 +474,44 @@ body {
   .elemento-desktop {
     display: none;
   }
+}
+
+.centraliza-chamada {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subtitulo {
+  font-size: 2.6rem;
+  color: #f86401;
+  font-weight: 700;
+}
+@media only screen and (max-width: 48em) {
+  .subtitulo {
+    font-size: 2.2rem;
+  }
+}
+
+.novo-jeito {
+  font-size: 2rem;
+  margin-top: 4rem;
+  line-height: 3rem;
+}
+@media only screen and (max-width: 48em) {
+  .novo-jeito {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+}
+
+.texto-destaque {
+  color: #f86401;
 }
 
 .col-background-celular {
@@ -593,15 +592,6 @@ body {
     padding: 5rem 0 0 0;
   }
 }
-.vantagens h2 {
-  font-size: 2.6rem;
-  margin-bottom: 4rem;
-}
-@media only screen and (max-width: 48em) {
-  .vantagens h2 {
-    font-size: 2.2rem;
-  }
-}
 .vantagens p {
   margin-top: 1.5rem;
 }
@@ -618,7 +608,7 @@ body {
 }
 @media only screen and (max-width: 48em) {
   .vantagens-col-descricao {
-    padding: 5rem 1rem 3rem 1rem;
+    padding: 5rem 3rem 2rem 3rem;
     order: 1;
   }
 }
@@ -642,10 +632,15 @@ body {
   background-color: #f7f3ed;
 }
 
-.owl-carousel {
+.carousel-empresas {
   padding-bottom: 8rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .carousel-entenda {
+    padding-bottom: 5rem;
+  }
+}
 .carousel-empresas .owl-item {
   text-align: center;
   opacity: 0.4;
@@ -668,7 +663,11 @@ body {
 }
 
 .owl-dots {
-  margin-top: 1rem;
+  margin-top: 4rem;
+}
+
+.fixedmenu {
+  overflow-y: hidden;
 }
 
 .footer {
